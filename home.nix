@@ -8,9 +8,9 @@
 	programs.bash = {
 		enable = true;
 		shellAliases = {
-			btw = "echo Fuck you";
-			import = "/home/me/.config/CustomScript/GitCloning.sh";
-			localssh = "/home/me/.config/CustomScript/localSSH.sh";
+			import = "/home/achka/.config/CustomScript/GitCloning.sh";
+			localssh = "/home/achka/.config/CustomScript/localSSH.sh";
+			update = "/home/achka/.config/CustomScript/Update.sh";
 		};
 		initExtra = ''
 			eval "$(starship init bash)"
@@ -33,8 +33,14 @@
 		brave
 		emacs
 		thunar
+		lxappearance
+		brightnessctl
 		alacritty
+		dunst
+		playerctl
+		pavucontrol
 		brave
+		notify-desktop
 		wget
 		dmenu
 	];

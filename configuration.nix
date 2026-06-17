@@ -11,9 +11,21 @@
 
 	time.timeZone = "Asia/Ulaanbaatar";
 
-	services.xserver = {
+	services.xserver.windowManager.dwm = {
 		enable = true;
-		windowManager.dwm.enable = true;
+		package = pkgs.dwm.overrideAttrs {
+			src = /home/achka/.config/dwm;
+		};
+	};
+
+	services.xserver.enable = true;
+	services.xserver.xkbOptions = "ctrl:nocaps";
+	services.libinput = {
+		enable = true;
+		touchpad = {
+			naturalScrolling = true;
+			scrollMethod = "twofinger";
+		};
 	};
 	services.displayManager.ly.enable = true;
 
