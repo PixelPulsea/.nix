@@ -39,9 +39,6 @@
 		dunst
 		playerctl
 		pavucontrol
-		brave
 		notify-desktop
-		wget
-		dmenu
 	];
 }
