@@ -20,28 +20,30 @@
 
 	programs.git = {
 		enable = true;
-		userEmail = "achka.bt@gmail.com";
-		userName = "PixelPulsea";
+		settings.user.email = "achka.bt@gmail.com";
+		settings.user.name = "PixelPulsea";
 	};
 
 	home.packages = with pkgs; [
+		#for x11
 		picom
+		dmenu
+		lxappearance
+		feh
+		flameshot
+		
 		direnv
 		starship
 		wget
-		dmenu
 		brave
 		emacs
 		thunar
-		lxappearance
 		brightnessctl
 		alacritty
 		dunst
 		playerctl
+		copyq
 		pavucontrol
-		brave
 		notify-desktop
-		wget
-		dmenu
 	];
 }

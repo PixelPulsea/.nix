@@ -17,14 +17,25 @@
 			src = /home/achka/.config/dwm;
 		};
 	};
+	
+	#you may uncomment these for X11 tilers
+	#programs.xss-lock.enable = true;
+	#programs.xss-lock.lockerCommand = "/run/wrappers/bin/slock";
+	#programs.slock.enable = true;
 
-	services.xserver.enable = true;
-	services.xserver.xkbOptions = "ctrl:nocaps";
+	services.power-profiles-daemon.enable = true;
+
+	#same deal
+	#services.xserver.enable = true;
+	#services.xserver.xkb.options = "ctrl:nocaps";
 	services.libinput = {
 		enable = true;
 		touchpad = {
 			naturalScrolling = true;
 			scrollMethod = "twofinger";
+		};
+		mouse = {
+			accelProfile = "flat";
 		};
 	};
 	services.displayManager.ly.enable = true;
