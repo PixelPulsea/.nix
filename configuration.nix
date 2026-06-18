@@ -19,7 +19,7 @@
 	};
 
 	services.xserver.enable = true;
-	services.xserver.xkbOptions = "ctrl:nocaps";
+	services.xserver.xkb.options = "ctrl:nocaps";
 	services.libinput = {
 		enable = true;
 		touchpad = {
@@ -28,6 +28,10 @@
 		};
 	};
 	services.displayManager.ly.enable = true;
+
+	#what are these? services that make nautilus way better
+	services.gvfs.enable = true;
+	services.udisks2.enable = true;
 
 	users.users.achka = {
 		isNormalUser = true;

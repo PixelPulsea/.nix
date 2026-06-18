@@ -20,8 +20,8 @@
 
 	programs.git = {
 		enable = true;
-		userEmail = "achka.bt@gmail.com";
-		userName = "PixelPulsea";
+		settings.user.email = "achka.bt@gmail.com";
+		settings.user.name = "PixelPulsea";
 	};
 
 	home.packages = with pkgs; [
@@ -32,13 +32,14 @@
 		dmenu
 		brave
 		emacs
-		thunar
+		nautilus
 		lxappearance
 		brightnessctl
 		alacritty
 		dunst
 		playerctl
 		pavucontrol
+		nicotine-plus
 		notify-desktop
 	];
 }
