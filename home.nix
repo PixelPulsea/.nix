@@ -20,8 +20,8 @@
 
 	programs.git = {
 		enable = true;
-		settings.user.email = "achka.bt@gmail.com";
-		settings.user.name = "PixelPulsea";
+		settings.user.email = "";
+		settings.user.name = "";
 	};
 
 	home.packages = with pkgs; [
