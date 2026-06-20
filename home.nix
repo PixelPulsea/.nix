@@ -40,6 +40,7 @@
 		nicotine-plus
 		ristretto
 		strawberry
+		steam
 		dropbox
 		
 		#rest
