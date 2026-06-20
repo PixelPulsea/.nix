@@ -38,6 +38,7 @@
 		extraGroups = [ "wheel" ];
 	};
 
+	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [ vim git ];
 
 	fonts.packages = with pkgs; [

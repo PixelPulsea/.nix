@@ -20,26 +20,42 @@
 
 	programs.git = {
 		enable = true;
-		settings.user.email = "";
-		settings.user.name = "";
+		settings.user.email = "achka.bt@gmail.com";
+		settings.user.name = "PixelPulsea";
+	};
+
+	home.pointerCursor = {
+		gtk.enable = true;
+		x11.enable = true;
+		package = pkgs.posy-cursors;
+		name = "Posy's Cursor";
+		size = 16;
 	};
 
 	home.packages = with pkgs; [
+		#x11 necessities
 		picom
-		direnv
-		starship
-		wget
+		flameshot
 		dmenu
+		copyq
+
+		#apps
 		brave
 		emacs
-		nautilus
-		lxappearance
-		brightnessctl
+		thunar
 		alacritty
-		dunst
-		playerctl
 		pavucontrol
 		nicotine-plus
+		
+		#rest
+		playerctl
 		notify-desktop
+		brightnessctl
+		nwg-look
+		direnv
+		dunst
+		starship
+		feh
+		papirus-icon-theme
 	];
 }
