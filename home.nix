@@ -24,14 +24,6 @@
 		settings.user.name = "PixelPulsea";
 	};
 
-	home.pointerCursor = {
-		gtk.enable = true;
-		x11.enable = true;
-		package = pkgs.posy-cursors;
-		name = "Posy's Cursor";
-		size = 16;
-	};
-
 	home.packages = with pkgs; [
 		#x11 necessities
 		picom
@@ -46,6 +38,8 @@
 		alacritty
 		pavucontrol
 		nicotine-plus
+		ristretto
+		strawberry
 		
 		#rest
 		playerctl
