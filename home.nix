@@ -40,6 +40,7 @@
 		nicotine-plus
 		ristretto
 		strawberry
+		dropbox
 		
 		#rest
 		playerctl
