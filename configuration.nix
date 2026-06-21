@@ -18,18 +18,23 @@
 		};
 	};
 
+	hardware.graphics = {
+		enable = true;
+		enable32Bit = true;
+	};
+
 	services.xserver.enable = true;
 	services.xserver.xkb.options = "ctrl:nocaps";
 	services.libinput = {
 		enable = true;
-		touchpad = {
+ 		touchpad = {
 			naturalScrolling = true;
 			scrollMethod = "twofinger";
 		};
 	};
 	services.displayManager.ly.enable = true;
 
-	#what are these? services that make nautilus way better
+	#what are these? services that make file managers way better
 	services.gvfs.enable = true;
 	services.udisks2.enable = true;
 
@@ -40,6 +45,8 @@
 
 	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [ vim git ];
+	programs.xss-lock.enable = true;
+	programs.slock.enable = true;
 
 	fonts.packages = with pkgs; [
 		liberation_ttf

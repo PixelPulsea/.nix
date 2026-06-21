@@ -49,8 +49,6 @@
 		brightnessctl
 		nwg-look
 		direnv
-		xss-lock
-		slock
 		dunst
 		starship
 		feh
